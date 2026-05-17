@@ -1,0 +1,22 @@
+{
+  "name": "urunimi-skills",
+  "owner": {
+    "name": "Byungwoo Yoo",
+    "email": "hovan@hovans.com"
+  },
+  "metadata": {
+    "description": "Personal Claude Code skills by urunimi",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "urunimi-skills",
+      "description": "Personal skills for Claude Code — currently includes korean-polish for removing translationese from Korean LLM output.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/korean-polish"
+      ]
+    }
+  ]
+}
