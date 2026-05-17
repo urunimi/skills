@@ -10,8 +10,8 @@
   },
   "plugins": [
     {
-      "name": "urunimi-skills",
-      "description": "Personal skills for Claude Code — currently includes korean-polish for removing translationese from Korean LLM output.",
+      "name": "korean-polish",
+      "description": "Korean translationese remover for Claude's Korean responses. 2-pass refinement (draft → critique → final).",
       "source": "./",
       "strict": false,
       "skills": [
