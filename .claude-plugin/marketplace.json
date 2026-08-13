@@ -17,6 +17,15 @@
       "skills": [
         "./skills/korean-polish"
       ]
+    },
+    {
+      "name": "refactor-check",
+      "description": "Reviews changed code before a commit or PR. Catches SOLID violations by checking added lines against mechanical rules (type branching, cycle-dodging imports, entities reaching for adapters) instead of reciting definitions.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/refactor-check"
+      ]
     }
   ]
 }
