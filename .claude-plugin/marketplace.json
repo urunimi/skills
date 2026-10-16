@@ -26,6 +26,15 @@
       "skills": [
         "./skills/refactor-check"
       ]
+    },
+    {
+      "name": "pm-consult",
+      "description": "Coordinates a Claude developer and a Codex PM in Orca, with reciprocal design and implementation reviews from kickoff through PR review.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/pm-consult"
+      ]
     }
   ]
 }

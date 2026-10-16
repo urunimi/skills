@@ -28,6 +28,12 @@ Reviews changed code before a commit or PR. Alongside the usual consistency chec
 
 Why definitions fail and what the rules are: [blog.hovans.com/solid-rules/](https://blog.hovans.com/solid-rules/)
 
+### pm-consult
+
+Coordinates a Claude developer and a Codex PM in two Orca terminals. Codex owns product scope, UI/UX designs and acceptance criteria; Claude owns system design, implementation and tests. They review each other’s work at kickoff, design changes, before a PR and during PR review.
+
+Requires Orca with both terminals open in the same worktree. Use the skill in both agents. It assumes Linear for issues and design documents, plus project-specific design and PR review tools. See [the skill](./skills/pm-consult/SKILL.md) for the workflow; adapt its default approval boundaries to your team.
+
 ## License
 
 [Apache 2.0](./LICENSE)
