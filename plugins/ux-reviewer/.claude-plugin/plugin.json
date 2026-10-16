@@ -1,0 +1,9 @@
+{
+  "name": "ux-reviewer",
+  "version": "0.1.0",
+  "description": "Reviews UI plans and real browser workflows with evidence, without editing application code.",
+  "author": {
+    "name": "urunimi"
+  },
+  "license": "Apache-2.0"
+}

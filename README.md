@@ -1,6 +1,6 @@
-# Skills
+# Skills and agents
 
-Personal [Claude Code](https://claude.com/claude-code) skills by [@urunimi](https://github.com/urunimi).
+Personal [Claude Code](https://claude.com/claude-code) skills and agents by [@urunimi](https://github.com/urunimi).
 
 ## Install in Claude Code
 
@@ -10,7 +10,7 @@ Register this repository as a Claude Code plugin marketplace:
 /plugin marketplace add urunimi/skills
 ```
 
-Then run `/plugin install` and select the skills you want.
+Then run `/plugin install` and select the plugins you want.
 
 ## Skills
 
@@ -33,6 +33,22 @@ Why definitions fail and what the rules are: [blog.hovans.com/solid-rules/](http
 Coordinates a Claude developer and a Codex PM in two Orca terminals. Codex owns product scope, UI/UX designs and acceptance criteria; Claude owns system design, implementation and tests. They review each other’s work at kickoff, design changes, before a PR and during PR review.
 
 Requires Orca with both terminals open in the same worktree. Use the skill in both agents. It assumes Linear for issues and design documents, plus project-specific design and PR review tools. See [the skill](./skills/pm-consult/SKILL.md) for the workflow; adapt its default approval boundaries to your team.
+
+## Agents
+
+### ux-reviewer
+
+A Claude Code subagent for planning reviews and real-browser UX reviews. It checks task flow, interaction cost, state and recovery, layout, language, and accessibility, then returns findings with evidence. It does not edit application code. Repeat reviews revisit open findings and affected screens.
+
+Install after adding this marketplace:
+
+```
+/plugin install ux-reviewer@urunimi-skills
+```
+
+Ask Claude to delegate to the `ux-reviewer` agent and provide the task, screens, and acceptance criteria. For planning, explicitly request planning mode and supply a draft; for implementation, provide an app URL, safe test access, and an available browser tool. Planning estimates are kept separate from implementation measurements.
+
+The [agent definition](./plugins/ux-reviewer/agents/ux-reviewer.md) is framework- and locale-independent. Browser tools are not bundled. Existing design rules, automated UX probes, PR gates, and screenshot hosting can be used through project-documented interfaces, but are optional. Without them, it produces a local report; it does not create a gate approval. External posting needs caller authorization. This is a Claude Code agent, not a portable `SKILL.md`.
 
 ## License
 

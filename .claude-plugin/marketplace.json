@@ -5,7 +5,7 @@
     "email": "hovan@hovans.com"
   },
   "metadata": {
-    "description": "Personal Claude Code skills by urunimi",
+    "description": "Personal Claude Code skills and agents by urunimi",
     "version": "0.1.0"
   },
   "plugins": [
@@ -35,6 +35,11 @@
       "skills": [
         "./skills/pm-consult"
       ]
+    },
+    {
+      "name": "ux-reviewer",
+      "description": "Reviews UI plans and real browser workflows with evidence, without editing application code.",
+      "source": "./plugins/ux-reviewer"
     }
   ]
 }
