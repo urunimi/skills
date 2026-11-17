@@ -40,6 +40,24 @@
       "name": "ux-reviewer",
       "description": "Reviews UI plans and real browser workflows with evidence, without editing application code.",
       "source": "./plugins/ux-reviewer"
+    },
+    {
+      "name": "band-score",
+      "description": "Build beat-aligned band practice scores and MIDI from recordings, with instrument-specific transcription, playable TAB and verified edits.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/band-score"
+      ]
+    },
+    {
+      "name": "session-title",
+      "description": "Rename and verify the paired Claude and Codex conversations in Orca from the connected Codex terminal.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/session-title"
+      ]
     }
   ]
 }
