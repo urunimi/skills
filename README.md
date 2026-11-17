@@ -34,6 +34,14 @@ Coordinates a Claude developer and a Codex PM in two Orca terminals. Codex owns 
 
 Requires Orca with both terminals open in the same worktree. Use the skill in both agents. It assumes Linear for issues and design documents, plus project-specific design and PR review tools. See [the skill](./skills/pm-consult/SKILL.md) for the workflow; adapt its default approval boundaries to your team.
 
+### band-score
+
+Turns recordings and a reference lead sheet into band practice material: a shared edit timeline, instrument-specific transcription, rhythm revision, playable TAB and MIDI. Keeps source evidence separate from approved arrangements and checks every rendered page. The audio edit helper needs NumPy and SoundFile; model and engraving tools are optional per task. See [the skill](./skills/band-score/SKILL.md).
+
+### session-title
+
+Renames and verifies both conversations in a local Orca Claude/Codex pair. Run its helper from the paired Codex terminal; ambiguous connections fail without choosing the latest session. Requires Orca, Codex and the local provider transcripts. Remote-host execution and Claude self-renaming are deliberately rejected. See [the skill](./skills/session-title/SKILL.md).
+
 ## Agents
 
 ### ux-reviewer
